@@ -220,7 +220,7 @@
           {
             "$$hashKey": "object:402",
             "decimals": 2,
-            "format": "Mbits",
+            "format": "MBs",
             "label": "Download (MB/s)",
             "logBase": 1,
             "max": null,
@@ -249,28 +249,36 @@
                   "value": null
                 },
                 {
-                  "color": "dark-green",
-                  "value": 25
+                  "color": "super-light-green",
+                  "value": 0
                 },
                 {
-                  "color": "semi-dark-green",
+                  "color": "light-green",
                   "value": 50
                 },
                 {
-                  "color": "#EAB839",
-                  "value": 75
-                },
-                {
-                  "color": "semi-dark-orange",
+                  "color": "semi-dark-green",
                   "value": 100
                 },
                 {
-                  "color": "light-red",
-                  "value": 125
+                  "color": "semi-dark-green",
+                  "value": 150
+                },
+                {
+                  "color": "light-orange",
+                  "value": 150
+                },
+                {
+                  "color": "super-light-orange",
+                  "value": 200
+                },
+                {
+                  "color": "semi-dark-orange",
+                  "value": 250
                 },
                 {
                   "color": "dark-red",
-                  "value": 150
+                  "value": 300
                 }
               ]
             },
@@ -353,35 +361,31 @@
               "steps": [
                 {
                   "color": "dark-red",
-                  "value": 160
+                  "value": null
                 },
                 {
                   "color": "light-red",
-                  "value": 180
+                  "value": 5
                 },
                 {
                   "color": "dark-orange",
-                  "value": 200
+                  "value": 10
                 },
                 {
                   "color": "super-light-orange",
-                  "value": 220
+                  "value": 20
                 },
                 {
                   "color": "super-light-green",
-                  "value": 240
+                  "value": 30
                 },
                 {
                   "color": "light-green",
-                  "value": 260
+                  "value": 40
                 },
                 {
                   "color": "semi-dark-green",
-                  "value": 280
-                }
-                {
-                  "color": "dark-green",
-                  "value": 300
+                  "value": 50
                 }
               ]
             },
@@ -643,31 +647,31 @@
                 },
                 {
                   "color": "red",
-                  "value": 1.5
+                  "value": 0.5
                 },
                 {
                   "color": "dark-orange",
-                  "value": 2.0
+                  "value": 1
                 },
                 {
                   "color": "light-yellow",
-                  "value": 2.5
+                  "value": 2
                 },
                 {
                   "color": "super-light-green",
-                  "value": 3.0
+                  "value": 3
                 },
                 {
                   "color": "light-green",
-                  "value": 3.5
+                  "value": 4
                 },
                 {
                   "color": "semi-dark-green",
-                  "value": 4.0
+                  "value": 5
                 },
                 {
                   "color": "dark-green",
-                  "value": 4.5
+                  "value": 6
                 }
               ]
             },
@@ -683,7 +687,7 @@
         },
         "id": 22,
         "options": {
-          "colorMode": "background",
+          "colorMode": "value",
           "graphMode": "none",
           "justifyMode": "auto",
           "orientation": "auto",
@@ -901,38 +905,48 @@
             "mappings": [],
             "max": 1000,
             "min": 0,
-            "steps": [
+            "thresholds": {
+              "mode": "percentage",
+              "steps": [
                 {
-                  "color": "dark-red",
-                  "value": 40
+                  "color": "super-light-green",
+                  "value": null
                 },
                 {
-                  "color": "light-red",
-                  "value": 35
+                  "color": "light-green",
+                  "value": 10
                 },
                 {
-                  "color": "dark-orange",
+                  "color": "semi-dark-green",
+                  "value": 20
+                },
+                {
+                  "color": "dark-green",
                   "value": 30
                 },
                 {
                   "color": "super-light-orange",
-                  "value": 25
+                  "value": 40
                 },
                 {
-                  "color": "super-light-green",
-                  "value": 20
+                  "color": "light-orange",
+                  "value": 50
                 },
                 {
-                  "color": "semi-dark-green",
-                  "value": 15
+                  "color": "semi-dark-orange",
+                  "value": 70
                 },
                 {
-                  "color": "semi-dark-green",
-                  "value": 10
+                  "color": "dark-orange",
+                  "value": 80
                 },
                 {
-                  "color": "dark-green",
-                  "value": 5
+                  "color": "light-red",
+                  "value": 90
+                },
+                {
+                  "color": "dark-red",
+                  "value": 100
                 }
               ]
             },
@@ -1787,32 +1801,28 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "dark-red",
+                  "color": "super-light-green",
                   "value": null
                 },
                 {
-                  "color": "dark-green",
-                  "value": 25
+                  "color": "semi-dark-green",
+                  "value": 150
                 },
                 {
-                  "color": "semi-dark-green",
-                  "value": 50
+                  "color": "dark-green",
+                  "value": 200
                 },
                 {
                   "color": "#EAB839",
-                  "value": 75
+                  "value": 250
                 },
                 {
                   "color": "semi-dark-orange",
-                  "value": 100
-                },
-                {
-                  "color": "light-red",
-                  "value": 125
+                  "value": 300
                 },
                 {
                   "color": "dark-red",
-                  "value": 150
+                  "value": 350
                 }
               ]
             },
@@ -1907,32 +1917,28 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "dark-red",
+                  "color": "super-light-green",
                   "value": null
                 },
                 {
-                  "color": "dark-green",
-                  "value": 50
-                },
-                {
                   "color": "semi-dark-green",
-                  "value": 100
-                },
-                {
-                  "color": "#EAB839",
                   "value": 150
                 },
                 {
-                  "color": "semi-dark-orange",
+                  "color": "dark-green",
                   "value": 200
                 },
                 {
-                  "color": "light-red",
+                  "color": "#EAB839",
                   "value": 250
                 },
                 {
-                  "color": "dark-red",
+                  "color": "semi-dark-orange",
                   "value": 300
+                },
+                {
+                  "color": "dark-red",
+                  "value": 350
                 }
               ]
             },
@@ -2027,32 +2033,28 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "dark-red",
+                  "color": "super-light-green",
                   "value": null
                 },
                 {
-                  "color": "dark-green",
-                  "value": 50
-                },
-                {
                   "color": "semi-dark-green",
-                  "value": 100
-                },
-                {
-                  "color": "#EAB839",
                   "value": 150
                 },
                 {
-                  "color": "semi-dark-orange",
+                  "color": "dark-green",
                   "value": 200
                 },
                 {
-                  "color": "light-red",
+                  "color": "#EAB839",
                   "value": 250
                 },
                 {
-                  "color": "dark-red",
+                  "color": "semi-dark-orange",
                   "value": 300
+                },
+                {
+                  "color": "dark-red",
+                  "value": 350
                 }
               ]
             },
