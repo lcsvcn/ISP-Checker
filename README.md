@@ -66,7 +66,7 @@ It's a super useful dashboard to monitor Hardware and Operating system stadistic
 ### Configuration
 Make sure you have the [Docker-CE](https://phoenixnap.com/kb/docker-on-raspberry-pi) and [cURL](https://curl.haxx.se/) installed on your *Raspberry Pi*. If you don't, install it using your prefer method.
 ```bash
-$ curl -fsSL https://get.docker.com -o get-docker.sh | bash -
+$:  curl -fsSL https://get.docker.com -o get-docker.sh | bash -
 ```
 #### speedtest-cli
 
@@ -83,7 +83,7 @@ https://github.com/sivel/speedtest-cli
 You need to have `docker-compose` installed. To install it execute:
 
 ```bash
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$:  sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 Alternatively you can install it using `pip`:
@@ -116,12 +116,12 @@ INFLUXDB_READ_USER_PASSWORD=VerySecurePassword
 
 If your primary interface is not named `eth0` please take note of the right name and update it on demand by running the following command:
 ```
-$ sed -i 's/eth0/<YOUR-INTERFACE-NAME>/gi' docker-compose/grafana/network-dashboard.json
+$:  sed -i 's/eth0/<YOUR-INTERFACE-NAME>/gi' docker-compose/grafana/network-dashboard.json
 ```
 
 For example, if your Interface is called `wlan0`:
 ```bash
-$ sed -i 's/eth0/wlan0/gi' docker-compose/grafana/network-dashboard.json
+$:  sed -i 's/eth0/wlan0/gi' docker-compose/grafana/network-dashboard.json
 ```
 
 #### Installation
