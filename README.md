@@ -68,6 +68,17 @@ Make sure you have the [Docker-CE](https://phoenixnap.com/kb/docker-on-raspberry
 ```bash
 $ curl -fsSL https://get.docker.com -o get-docker.sh | bash -
 ```
+#### speedtest-cli
+
+You need to have `speedtest-cli` installed. To install it execute:
+
+```bash
+pip3 install speedtest-cli
+```
+
+You can find alternative ways to install here:
+https://github.com/sivel/speedtest-cli
+
 #### docker-compose
 You need to have `docker-compose` installed. To install it execute:
 
@@ -77,7 +88,7 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docke
 
 Alternatively you can install it using `pip`:
 ```bash
-$: pip install docker-compose
+$: pip3 install docker-compose
 ```
 
 Configure the `./ISP-Checker/credentials.env` file.
