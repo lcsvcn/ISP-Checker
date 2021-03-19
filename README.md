@@ -49,7 +49,7 @@ You can easily import this dashboard into your current Grafana installation gett
 ### kubernetes
 Kubernetes is in `beta` version. To install just run:
 ```bash
-$ kubectl apply -f https://raw.githubusercontent.com/fmdlc/ISP-Checker/master/kubernetes/ISP-Checker-deploy.yaml
+$:  kubectl apply -f https://raw.githubusercontent.com/fmdlc/ISP-Checker/master/kubernetes/ISP-Checker-deploy.yaml
 ```
 You need to expose the `grafana` service to get access. You can do it by creating a `LoadBalancer` service type or by using an `IngressController`.
 
