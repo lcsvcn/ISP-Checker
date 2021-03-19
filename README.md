@@ -73,7 +73,7 @@ $ curl -fsSL https://get.docker.com -o get-docker.sh | bash -
 You need to have `speedtest-cli` installed. To install it execute:
 
 ```bash
-pip3 install speedtest-cli
+$: pip3 install speedtest-cli
 ```
 
 You can find alternative ways to install here:
