@@ -14,8 +14,8 @@ RUN apt-get install gnupg1 apt-transport-https dirmngr \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY \
     echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list \
     apt-get update && apt-get install -y --no-install-recommends \
-    mtr \
-    speedtest && \
+    apt-get install mtr \
+    apt-get install speedtest && \
     rm -rf /var/lib/apt/lists/* && \
     usermod -G video telegraf
 
