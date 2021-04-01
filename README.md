@@ -27,7 +27,7 @@
 
 `ISP-Checker` implements a set of [Telegraf](https://github.com/influxdata/telegraf) checks that sends metrics to [InfluxDB](https://www.influxdata.com/) (a OpenSource, time series based database) and runs several kind of metrics collectors to get average/aggregation/integral of values at first glance and focusing on  service quality.
 
-`ISP-Checker` tries to test things like _ICMP packet loss_, the average time for _DNS queries resolution_, _HTTP Response times_, _ICMP latencies_, _ICMP Standard Deviation_, _Upload/Download speed_ (by using [Speedtest-cli](https://github.com/sivel/speedtest-cli)) and a Graphical _MTR/Traceroute_ version.
+`ISP-Checker` tries to test things like _ICMP packet loss_, the average time for _DNS queries resolution_, _HTTP Response times_, _ICMP latencies_, _ICMP Standard Deviation_, _Upload/Download speed_ (by using [Speedtest-cli](https://www.speedtest.net/pt/apps/cli)) and a Graphical _MTR/Traceroute_ version.
 
 It's easily extensible and it was built on top of [Docker](http://docker.com) to make it portable and easy to run everywhere, importing automatically all components needed to perform checks.
 
@@ -70,14 +70,8 @@ $:  curl -fsSL https://get.docker.com -o get-docker.sh | bash -
 ```
 #### speedtest-cli
 
-You need to have `speedtest-cli` installed. To install it execute:
-
-```bash
-$: pip3 install speedtest-cli
-```
-
-You can find alternative ways to install here:
-https://github.com/sivel/speedtest-cli
+You need to have `speedtest-cli` installed. Find how to install in your distro here:
+https://www.speedtest.net/pt/apps/cli
 
 #### docker-compose
 You need to have `docker-compose` installed. To install it execute:
