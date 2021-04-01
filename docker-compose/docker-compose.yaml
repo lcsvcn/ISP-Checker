@@ -23,6 +23,7 @@ services:
     image: tty0/isp_telegraf:1.15.3
     volumes:
       - "./telegraf/conf/telegraf.conf:/etc/telegraf/telegraf.conf"
+      - /var/run/docker.sock:/var/run/docker.sock
     env_file:
       - ./credentials.env
     links:
