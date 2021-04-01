@@ -9,9 +9,13 @@ LABEL component="telegraf"
 
 COPY ./bin/entrypoint.sh /entrypoint.sh
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    mtr=0.92-2 \
-    speedtest-cli=2.0.2-1+deb10u1 && \
+RUN apt-get install gnupg1 apt-transport-https dirmngr \
+    export INSTALL_KEY=379CE192D401AB61 \
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY \
+    echo "deb https://ookla.bintray.com/debian generic main" | sudo tee  /etc/apt/sources.list.d/speedtest.list \
+    apt-get update && apt-get install -y --no-install-recommends \
+    mtr \
+    speedtest && \
     rm -rf /var/lib/apt/lists/* && \
     usermod -G video telegraf
 
