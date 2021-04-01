@@ -121,7 +121,7 @@
               [
                 {
                   "params": [
-                    "Download"
+                    "Download Bytes"
                   ],
                   "type": "field"
                 },
@@ -170,7 +170,7 @@
               [
                 {
                   "params": [
-                    "Upload"
+                    "Upload Bytes"
                   ],
                   "type": "field"
                 },
@@ -330,7 +330,7 @@
               [
                 {
                   "params": [
-                    "Ping"
+                    "Latency"
                   ],
                   "type": "field"
                 },
@@ -345,7 +345,7 @@
         ],
         "timeFrom": null,
         "timeShift": null,
-        "title": "Speedtest (Ping)",
+        "title": "Speedtest (Latency)",
         "type": "gauge"
       },
       {
@@ -440,7 +440,7 @@
               [
                 {
                   "params": [
-                    "Download"
+                    "Download Bytes"
                   ],
                   "type": "field"
                 },
