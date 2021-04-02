@@ -2,8 +2,6 @@ FROM telegraf:latest
 
 ARG ARCH
 
-LABEL mantainer="Facu de la Cruz"
-LABEL email="fmdlc.unix@gmail.com"
 LABEL project="ISP-Checker"
 LABEL component="telegraf"
 
